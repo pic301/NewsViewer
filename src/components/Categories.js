@@ -72,8 +72,8 @@ const Categories = () => {
     <CategoriesBlock>
       {categories.map(c => (
         <Category 
-        activeClassName='active'
-        exact={c.name=== 'all'}
+        activeClassName = 'active'
+        exact={c.name === 'all'}
         to={c.name === 'all'? '/' : `/${c.name}`}
        >
         {c.text}
